@@ -1,5 +1,10 @@
 import styled from "styled-components";
+import { auth, provider } from "./firebase";
 const Header=(props)=>{
+    const handleAuth=()=>{
+        auth.signInWithPopup(provider)
+        .then(res=>{console.log(res);})
+    }
     return (<Nav>
         <Logo><img src="/image/logo.svg"/></Logo>
         <Navmenu>
@@ -16,10 +21,11 @@ const Header=(props)=>{
             <a href="/home"><img src='/image/series-icon.svg'/>
             <span>Series</span></a>
         </Navmenu>
+        <Login onClick={handleAuth}>Login</Login> 
     </Nav>) 
 }
 const Nav=styled.nav`
-position:fixed;
+position:fixed; 
 top:0;
 left:0;
 right:0;
@@ -101,6 +107,20 @@ a{
 };
 };
 `;
+const Login=styled.a`
+background-color:rgba(0,0,0.2,0.6);
+padding:8px 16px;
+text-transform:uppercase;
+border:1px solid #f9f9f9;
+border-radius:4px;
+letter-spacing:1.5px;
+transition: all 0.2s ease 0s;
+&:hover{
+    background-color:#f9f9f9;
+    color:black;
+}
+`;
+
 //as soon as width is less than 770px it will disappear
 // 59:29
 export default Header; 
