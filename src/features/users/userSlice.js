@@ -1,7 +1,7 @@
 import { createSlice } from "@reduxjs/toolkit";
 const initialState={
-    name:"",
-    emal:"",
+    name:null,
+    email:"",
     photo:"/public/image/WhatsApp Image 2022-03-09 at 16.01.33.jpeg"
 };
 const userSlice=createSlice({
@@ -10,13 +10,13 @@ const userSlice=createSlice({
     reducers:{
         setUserLoginDetails:(state,action)=>{
             state.name=action.payload.name
-            state.emal=action.payload.emal;
+            state.email=action.payload.email;
             state.photo=action.payload.photo;
         },
         setSignOutState:(state)=>{
-            state.emal=null;
-            state.name=null;
-            state.photo=null;
+            state.email= null;
+            state.name= null;
+            state.photo= null;
         },
     },
 });

@@ -1,14 +1,14 @@
 import styled from "styled-components";
 import { useSelector } from "react-redux";
-import {selectoriginal} from "../features/movie/movieSlice";
+import { selecttrending } from "../features/movie/movieSlice";
 import { Link } from "react-router-dom";// we click on link and it does not refresh 
-const Original=(props)=>{
+const Trending=(props)=>{
     
-    const movies = useSelector(selectoriginal);
+    const movies = useSelector(selecttrending);
     console.log(movies)
     return(
         <Container>
-            <h4> Original</h4>
+            <h4>Trending</h4>
             <Content>
                 { movies &&
                      movies.map((movie,key)=>(
@@ -26,7 +26,8 @@ const Original=(props)=>{
     )
 }
 const Container=styled.div`
-padding:0 0 26px;`;
+padding:0 0 26px;
+margin-bottom:100px;`;
 const Content=styled.div`
 display:grid;
 grid-gap:35px;
@@ -63,4 +64,4 @@ img{
     border-color:rgba(249,249,249,0.9);
 }
 `;
-export default Original;
+export default Trending;
