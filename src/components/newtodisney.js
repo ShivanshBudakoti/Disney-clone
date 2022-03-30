@@ -36,9 +36,9 @@ grid-template-columns:repeat(4,minmax(0,1fr));
 }`;
 const Wrap=styled.div`
 padding-top:56.25%;
-border-radius:10px;
+border-radius10px;
 box-shadow:rgb(0 0 0 / 70%) 0px 26px 30px -10px,
-rgb(0 0 0 / 72%) 0px 15px 10px -10px;
+rgb(0 0 0 / 72%) 0px 15px 10px -10px;:
 cursor:ponter;
 overflow:hidden;
 position:relative;

@@ -42,8 +42,8 @@ grid-template-columns:repeat(5, minmax(0,1fr));
 const Wrap=styled.div`
 padding-top:55%;
 border-radius:10px;
-box-shadow:rgb(0 0 0 / 69%) 0px 26px 30px -10px;,
-rgb(0 0 0 / 73) 0px 16px 10px -10px;
+box-shadow:rgb(0 0 0 / 79%) 0px 26px 30px -10px;,
+rgb(0 0 0 / 73) 0px 16px 10px -10px; //take from online
 cursor:pointer;
 overflow:hidden; 
 position:relative;
@@ -77,7 +77,6 @@ video{
     border-color:rgba(249,249,249,0.9);
     video{
         opacity:1;
-        border-color:
     }
 }
 `;

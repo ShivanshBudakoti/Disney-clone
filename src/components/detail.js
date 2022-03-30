@@ -70,9 +70,9 @@ img{
     height: 1005;
     
 
-@media(max-width:768px){
-    width:initial;
-}
+// @media(max-width:768px){
+//     width:initial;
+// }
 };`;
 const Imgtitle=styled.div`
 margin-top:100px;
