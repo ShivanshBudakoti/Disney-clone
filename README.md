@@ -1,6 +1,6 @@
 # Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).\.
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).\
 Deploy Link [https://disney-plus-clone-c34e2.web.appShivanshBudakoti](https://disney-plus-clone-c34e2.web.appShivanshBudakoti).
 ## Available Scripts
 
